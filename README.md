@@ -10,9 +10,10 @@ It can take up to 2 arguments:
 $ python path_to_file number_of_words_to_show
 ```
 
-#Examples:
+# Examples:
 
-Example with one argument (path). By default th list of 10 most frequent word is given:
+Example with one argument (path). 
+By default the list of 10 most frequent word is given:
 ```
 $ python lang_frequency.py '/Users/UserName/Documents/Герой_нашего_времени.txt'
 Top 10 most frequent words:
