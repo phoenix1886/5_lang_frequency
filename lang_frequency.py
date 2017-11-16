@@ -23,7 +23,7 @@ def extract_words_list_from_text(text):
     return words_list
 
 
-def get_most_frequent_words(text, number_of_words_to_show):
+def get_most_frequent_words(text, number_of_words_to_show=10):
     words_list = extract_words_list_from_text(text)
     words_counter = Counter(words_list)
     most_frequent_words = nlargest(number_of_words_to_show, words_counter,
