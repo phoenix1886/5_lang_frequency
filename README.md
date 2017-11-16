@@ -1,6 +1,6 @@
 # Frequency Analysis of Words
 
-This script calculates the most frequent words used in a given text.
+This script shows the most frequent words used in a given text.
 It can take up to 2 arguments: 
 * path to file
 * number of words to show (optional argument, default=10)
@@ -13,7 +13,7 @@ $ python path_to_file number_of_words_to_show
 # Examples:
 
 Example with one argument (path). 
-By default the list of 10 most frequent word is given:
+By default the list of 10 most frequent words is given:
 ```
 $ python lang_frequency.py '/Users/UserName/Documents/Герой_нашего_времени.txt'
 Top 10 most frequent words:
@@ -29,7 +29,7 @@ Top 10 most frequent words:
 10.: мне
 ```
 
-Example with two arguments (path, number_of_words):
+Example with two arguments (path, number_of_words), shows 5 most frequent word in text.
 ```
 $python lang_frequency.py '/Users/KirillMaslov/Documents/Герой_нашего_времени.txt' 5
 Top 5 most frequent words:
