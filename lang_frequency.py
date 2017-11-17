@@ -4,13 +4,13 @@ import argparse
 
 
 def create_arguments_parser():
-    terminal_parser = argparse.ArgumentParser(
+    arguments_parser = argparse.ArgumentParser(
         description='List the most frequent words in text.')
-    terminal_parser.add_argument('path', help='Path of a file')
-    terminal_parser.add_argument('--num_words', '-n', type=int, default=10,
+    arguments_parser.add_argument('path', help='Path of a file')
+    arguments_parser.add_argument('--num_words', '-n', type=int, default=10,
                                  help='Number of words to show')
 
-    return terminal_parser
+    return arguments_parser
 
 
 def load_text_from_file(file_path):
