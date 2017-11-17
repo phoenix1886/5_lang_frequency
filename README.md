@@ -7,7 +7,7 @@ It can take up to 2 arguments:
 
 # How to use
 ```
-$ python path_to_file number_of_words_to_show
+$ python lang_frequency.py -p path_to_file -n number_of_words_to_show
 ```
 
 # Examples:
