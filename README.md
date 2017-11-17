@@ -2,21 +2,21 @@
 
 This script shows the most frequent words used in a given text.
 It can take up to 2 arguments: 
-* --path, -p: path to file (optional argument, by default the first .txt document in root directory will be taken)
-* --num_words, -n: number of words to show (optional argument, default=10)
+* path (positional argument): path to file.
+* --num_words, -n  (optional argument): number of words to show, default value = 10.
 
 # How to use
 ```
-$ python lang_frequency.py -p path_to_file -n number_of_words_to_show
+$ python lang_frequency.py path_to_file -n number_of_words_to_show
 ```
 
 # Examples:
 
 Example with one argument (path). 
-By default the list of 10 most frequent words is given:
+By default the list of 10 most frequent words:
 ```
-$ python lang_frequency.py
-Top 10 most frequent words from the first .txt document in root directory:
+$ python lang_frequency.py '~/Documents/some_file.txt'
+Top 10 most frequent words:
  1.: и
  2.: я
  3.: не
@@ -29,9 +29,9 @@ Top 10 most frequent words from the first .txt document in root directory:
 10.: мне
 ```
 
-Example with two arguments (path, number_of_words), shows 5 most frequent word in text.
+Example with two arguments (path, num_words).
 ```
-$python lang_frequency.py -p '/Users/KirillMaslov/Documents/some_text.txt' -n 5
+$python lang_frequency.py '~/Documents/some_file.txt' -n 5
 Top 5 most frequent words:
  1.: и
  2.: я
