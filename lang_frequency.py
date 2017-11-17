@@ -4,6 +4,16 @@ import os
 import argparse
 
 
+def create_terminal_parser():
+    terminal_parser = argparse.ArgumentParser(
+        description='List the most frequent words in text.')
+    terminal_parser.add_argument('--path', '-p',help='Path of .txt file')
+    terminal_parser.add_argument('--num_words', '-n', type=int, default=10,
+                                 help='Number of words to show')
+
+    return terminal_parser
+
+
 def get_first_txt_file_path_from_root_directry():
     txt_file_path = ''
     file_names_in_current_dir = os.listdir(os.curdir)
@@ -44,11 +54,7 @@ def get_most_frequent_words(words_list, number_of_words_to_show=10):
 
 
 if __name__ == '__main__':
-    terminal_parser = argparse.ArgumentParser(
-        description='List the most frequent words in text.')
-    terminal_parser.add_argument('--path', '-p',help='Path of .txt file')
-    terminal_parser.add_argument('--num_words', '-n', type=int, default=10,
-                                 help='Number of words to show')
+    terminal_parser = create_terminal_parser()
     args = terminal_parser.parse_args()
 
     file_path = args.path or get_first_txt_file_path_from_root_directry()
