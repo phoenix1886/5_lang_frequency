@@ -8,7 +8,7 @@ def create_arguments_parser():
         description='List the most frequent words in text.')
     arguments_parser.add_argument('path', help='Path of a file')
     arguments_parser.add_argument('--num_words', '-n', type=int, default=10,
-                                 help='Number of words to show')
+                                  help='Number of words to show')
 
     return arguments_parser
 
